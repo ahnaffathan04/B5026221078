@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primaryText: #232e25;
+    --secondaryText: rgb(130, 130, 130);
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #e9e9e9;
+    --thirdBackgroundColor: #f5f3fe;
+  
+    --primaryIconColor: #276def;
+    --primaryIconColorHover: #0f48e5;
+
+    --sectionpadding: 90px;
+    --itemBorderRadius: 12px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2.h3,h4,h5,h6, strong {
+    color: var(--primaryText);
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+p, label, input, textarea, li {
+    color:var(--secondaryText);
+}
+
+span {
+    color: var(--primaryIconColorHover);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*untuk memberi jarak*/
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* media query agar screen saat dibahwah 1200px menjadi persentase */
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+/*button*/
+.btn{
+    padding: 16px 24px;
+    background: white;
+    border: 1.5px solid var(--borderColor);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0. 0, 0.04)  0px 3px 5px;
+}
+
+/* title */
+.pre-title {   
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: var(--secondaryText);
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 20px;
+                                                   
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+
+}
+
+.section-title {
+    margin: 16px 0 64px;
+    font-size: 32px;
+}
+
+.middle-title {
+    margin: 16px 0 64px;
+    font-size: 32px;
+    text-align: center;
+    color: var(--primaryIconColor);
+}
+
+/*layout*/
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+/*logo dan navbar*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.logo a {
+    color:var(--primaryIconColor);
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--primaryText);
+}
+
+/*burger*/
+.burgerMenu div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 30px;
+    right: 35px;
+
+}
+
+/* fathan section */
+#fathan{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.fathan-name {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 8px 1px 16px;
+}
+
+.fathan-name span {
+    color:var(--primaryIconColor)
+}
+
+.fathan-right img {
+    width: 90%;
+}
+
+.fathan-right {
+    display: flex;
+    justify-content: center;
+}
+
+/* education */
+#educations {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionpadding);
+    display: flex;
+}
+
+.education {
+    display: flex;
+    gap: 32px;
+}
+
+.education .line {
+    padding: 12px;
+}
+
+.education .line div {
+    width: 2px;
+    height: 100%;
+    background-color: var(--primaryIconColor);
+    position: relative;
+}
+
+.education .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--primaryIconColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.education-info p{
+    margin: 10px 0px;
+}
+
+.education-years {
+    margin-bottom: 48px;
+}
+
+/* skills */
+#skills {
+    padding: var(--sectionpadding);
+    background-color: var(--primaryBackgroundColor);
+    align-items: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 48px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 24px;
+}
+
+.skills-desc ul {
+    line-height: 32px;
+    padding: 0 16px;
+}
+
+/* service */
+
+#services {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionpadding);
+}
+
+.services .pre-title {
+    margin: 0 auto;
+}
+
+.services-title {
+    text-align: center;
+    color: var(--primaryIconColor);
+}
+
+.service {
+    padding: 48px 32px;
+    text-align:center ;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+    margin: 10px;
+}
+
+.service h4 {
+    margin: 24px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.service-icon {
+    background-color: var(--primaryIconColorHover);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 16px 20px;
+    border-radius: 8px;
+}
+
+.service-icon svg {
+    fill:rgb(0, 191, 255)
+}
+
+/* portofolio */
+#portofolios {
+    padding: var(--sectionpadding);
+}
+
+.portofolio {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+    margin: 10px;
+}
+
+.portofolio-cover {
+    height: 250px;
+}
+
+.portofolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portofolio.info {
+    padding: 32px 24px;
+}
+
+.portofolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.portofolio h4 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/* contact section */
+#contact {
+    padding: var(--sectionpadding);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap: 48px;
+}
+
+.contact-form div {
+    margin-bottom: 24px;    
+}
+
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--secondaryBackgroundColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color:  #9d9fa1;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+
+.btn-submit {
+    width: 30%;
+    padding: 12px 20px;
+    background-color: var(--primaryIconColorHover);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: var(--primaryIconColorHover);
+}
+
+.contact-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-item-detail-icon svg{
+    fill: var(--primaryIconColor)
+}
+
+.contact-item-detail h4 {
+    margin-bottom: 8px;    
+}
+
+/* footer */
+footer {
+    padding: 0px;
+    text-align: left;
+    background-color: rgb(61, 59, 59);
+}
+
+.footer-icons {
+    margin-bottom: 16px;
+}
+
+.footer-icons a {
+    margin: 0 10px 8px;
+}
+
+.footer-icons svg {
+    fill: white;
+}
+
+.footer-icons a:hover svg {
+    fill: var(--primaryIconColor);
+}

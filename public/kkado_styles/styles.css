@@ -1,0 +1,122 @@
+body {
+    background-image: url("/wallpaper_kkado.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.profilepicture{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    top: 80px;
+    display: block;
+
+}
+
+.center_text {
+    text-align: center;
+  }
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.right {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+  height: 75px;
+  position: relative;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.fathan-button1 {
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    font-size: large;
+}
+
+
+.fathan-button2 {
+    background-color: white;
+    border-radius: 0%;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 15px;
+    cursor: pointer;
+    width: 700px
+  }
+
+  .left-aligned-image {
+    float: left;
+    margin-right: 0px;
+    border-radius: 50%;
+    width: 10%;
+  }
+
+  .bottom-left-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-center-text {
+    position: absolute;
+    bottom: 50px;
+    left: 45%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+}
+
+.button3 {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: grey;
+    text-align: center;
+    border: none;
+    right: 30px;
+}
+
+.icon {
+    margin: 4px 8px;
+    width: 44px;
+    height: 44px;
+}
