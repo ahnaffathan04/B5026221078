@@ -87,6 +87,8 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 //route cari
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
+//route view
+Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 
 
