@@ -12,7 +12,7 @@
 
     <br />
     <br />
-    
+
     <form action="/pegawai/store" method="post" class="form-horizontal">
         {{ csrf_field() }}
 
@@ -32,7 +32,9 @@
                 </tr>
                 <tr>
                     <td class="pr-5">Alamat</td>
-                    <td><textarea name="alamat"></textarea></td>
+                    <td>
+                        <textarea name="alamat"></textarea>
+                    </td>
                 </tr>
             </table>
             <input type="submit" value="Simpan Data">
