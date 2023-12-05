@@ -91,5 +91,23 @@ Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 
+//route tugas pensil
+Route::get('/pensil','App\Http\Controllers\PensilController@index2');
+Route::get('/pensil/tambah','App\Http\Controllers\PensilController@tambah');
+Route::post('/pensil/store','App\Http\Controllers\PensilController@store');
+Route::get('/pensil/edit/{kode}','App\Http\Controllers\PensilController@edit');
+Route::post('/pensil/update','App\Http\Controllers\PensilController@update');
+Route::get('/pensil/hapus/{kode}','App\Http\Controllers\PensilController@hapus');
+Route::get('/pensil/cari','App\Http\Controllers\PensilController@cari');
+Route::get('/pensil/view/{kode}','App\Http\Controllers\PensilController@view');
 
+//route tugas nilai(LK)
+Route::get('/nilai','App\Http\Controllers\NilaiController@index3');
+Route::get('/nilai/tambahdata','App\Http\Controllers\NilaiController@tambahdata');
+Route::post('/nilai/store','App\Http\Controllers\NilaiController@store');
 
+//route tugas keranjang(PR)
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@indexkeranjangbelanja');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
+Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\KeranjangController@batal');

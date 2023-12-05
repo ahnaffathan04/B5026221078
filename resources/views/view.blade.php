@@ -18,7 +18,7 @@
             <div style="width: 100%; height: 500px; border: 2px solid black;"></div>
         </div>
 
-        <div class="col-6"
+        <div class="col-6 d-flex align-items-center"
             @foreach ($pegawai as $p)
 
                 <form action="/pegawai/view" method="post" class="form-horizontal">
