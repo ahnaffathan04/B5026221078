@@ -18,16 +18,13 @@ class PegawaiController extends Controller
 
     	// mengirim data pegawai ke view index
 		return view('index',['pegawai' => $pegawai]);
-
 	}
 
 	// method untuk menampilkan view form tambah pegawai
 	public function tambah()
 	{
-
 		// memanggil view tambah
 		return view('tambah');
-
 	}
 
 	// method untuk insert data ke table pegawai
@@ -42,7 +39,6 @@ class PegawaiController extends Controller
 		]);
 		// alihkan halaman ke halaman pegawai
 		return redirect('/pegawai');
-
 	}
 
 	// method untuk edit data pegawai
@@ -52,7 +48,6 @@ class PegawaiController extends Controller
 		$pegawai = DB::table('pegawai')->where('pegawai_id',$id)->get();
 		// passing data pegawai yang didapat ke view edit.blade.php
 		return view('edit',['pegawai' => $pegawai]);
-
 	}
 
 	// update data pegawai
@@ -84,7 +79,7 @@ class PegawaiController extends Controller
 		// menangkap data pencarian
 		$cari = $request->cari;
 
-    		// mengambil data dari table pegawai sesuai pencarian data
+    	// mengambil data dari table pegawai sesuai pencarian data
 		$pegawai = DB::table('pegawai')
 		            ->where('pegawai_nama','like',"%".$cari."%")
 		            ->paginate();

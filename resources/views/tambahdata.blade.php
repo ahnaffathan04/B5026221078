@@ -19,7 +19,7 @@
             <table>
                 <tr>
                     <td class="pr-5">ID</td>
-                    <td><input type="text" name="Id"></td>
+                    <td><input type="text" name="ID"></td>
                 </tr>
                 <tr>
                     <td class="pr-5">NRP</td>

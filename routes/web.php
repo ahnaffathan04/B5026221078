@@ -93,13 +93,13 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 //route tugas pensil
 Route::get('/pensil','App\Http\Controllers\PensilController@index2');
-Route::get('/pensil/tambah','App\Http\Controllers\PensilController@tambah');
+Route::get('/pensil/tambahpensil','App\Http\Controllers\PensilController@tambahpensil');
 Route::post('/pensil/store','App\Http\Controllers\PensilController@store');
-Route::get('/pensil/edit/{kode}','App\Http\Controllers\PensilController@edit');
+Route::get('/pensil/editpensil/{kode}','App\Http\Controllers\PensilController@edit');
 Route::post('/pensil/update','App\Http\Controllers\PensilController@update');
 Route::get('/pensil/hapus/{kode}','App\Http\Controllers\PensilController@hapus');
 Route::get('/pensil/cari','App\Http\Controllers\PensilController@cari');
-Route::get('/pensil/view/{kode}','App\Http\Controllers\PensilController@view');
+Route::get('/pensil/viewpensil/{kode}','App\Http\Controllers\PensilController@view');
 
 //route tugas nilai(LK)
 Route::get('/nilai','App\Http\Controllers\NilaiController@index3');
