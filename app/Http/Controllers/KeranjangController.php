@@ -21,10 +21,8 @@ class KeranjangController extends Controller
 	// method untuk menampilkan view form tambah pegawai
 	public function beli()
 	{
-
 		// memanggil view tambah
 		return view('beli');
-
 	}
 
 	// method untuk insert data ke table pegawai

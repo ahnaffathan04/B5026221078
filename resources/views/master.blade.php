@@ -14,15 +14,24 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Logo</a>
+  <a class="navbar-brand" href="#">078</a>
 
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
+      <a class="nav-link" href="/pegawai">Pegawai</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
+      <a class="nav-link" href="/nilai">Nilai Kuliah</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/pensil">Pensil</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/keranjangbelanja">Keranjang belanja</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/chat">Chat</a>
     </li>
 
     <!-- Dropdown -->
@@ -31,9 +40,11 @@
         Dropdown link
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+        <a class="dropdown-item" href="/pegawai">Pegawai</a>
+        <a class="dropdown-item" href="/nilai">Nilai Kuliah</a>
+        <a class="dropdown-item" href="/pensil">Pensil</a>
+        <a class="dropdown-item" href="/keranjangbelanja">Keranjang Belanja</a>
+        <a class="dropdown-item" href="/chat">Chat</a>
       </div>
     </li>
   </ul>

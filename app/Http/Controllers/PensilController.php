@@ -14,10 +14,10 @@ class PensilController extends Controller
         $pensil = DB::table('pensil')
                     ->orderBy('kode_pensil', 'asc')->get();
                     foreach($pensil as $p){
-                        if($p->tersedia){
-                            $p->tersedia = "YA";
+                        if($p->stock_pensil > 0){
+                            $p->tersedia = "Y";
                         } else {
-                            $p->tersedia = "TIDAK";
+                            $p->tersedia = "T";
                         }
                     }
 
@@ -86,7 +86,8 @@ class PensilController extends Controller
 
     	// mengambil data dari table pensil sesuai pencarian data
 		$pensil = DB::table('pensil')
-		            ->where('merk_pensil','like',"%".$cari."%");
+		            ->where('merk_pensil','like',"%".$cari."%")
+                    ->get();
 
     	// mengirim data pensil ke view index
 		return view('index2',['pensil' => $pensil, 'cari' => $cari]);

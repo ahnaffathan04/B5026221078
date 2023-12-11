@@ -111,3 +111,18 @@ Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@indexke
 Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
 Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\KeranjangController@batal');
+
+
+//route bos
+Route::get('/bos','App\Http\Controllers\BosController@indexbos');
+Route::get('/bos/tambahbos','App\Http\Controllers\BosController@tambahbos');
+Route::post('/bos/store','App\Http\Controllers\BosController@store');
+Route::get('/bos/editbos/{id}','App\Http\Controllers\BosController@editbos');
+Route::post('/bos/update','App\Http\Controllers\BosController@update');
+Route::get('/bos/hapus/{id}','App\Http\Controllers\BosController@hapus');
+Route::get('/bos/cari','App\Http\Controllers\BosController@cari');
+Route::get('/bos/viewbos/{id}','App\Http\Controllers\BosController@viewbos');
+
+
+//route chat
+Route::get('/chat','App\Http\Controllers\ChatController@indexchat');
